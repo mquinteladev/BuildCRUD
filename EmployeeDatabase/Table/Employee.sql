@@ -12,7 +12,7 @@
     [fk_companylist] INT NULL, 
     [another_company] NVARCHAR(250) NULL, 
     [aditional_info] NVARCHAR(500) NULL, 
-    [building_access] INT NOT NULL, 
+    [fk_buildingaccess] INT NULL, 
     [another_building] NVARCHAR(500) NULL, 
     [restricted_access] NVARCHAR(500) NULL, 
     [hiringManagerEmail] NVARCHAR(250) NOT NULL

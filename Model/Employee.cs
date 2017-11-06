@@ -26,9 +26,9 @@ namespace Model
         public Nullable<int> fk_companylist { get; set; }
         public string another_company { get; set; }
         public string aditional_info { get; set; }
-        public int building_access { get; set; }
         public string another_building { get; set; }
         public string restricted_access { get; set; }
         public string hiringManagerEmail { get; set; }
+        public Nullable<int> fk_buildingaccess { get; set; }
     }
 }

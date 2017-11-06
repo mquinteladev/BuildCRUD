@@ -27,7 +27,7 @@ namespace DataInfrastructure.Model
                 try
                 {
 
-
+                    item.id = -1;
                     Employee user = _context.Employees.Add(item.AsEmployee());
                     _context.SaveChanges();
 
@@ -98,27 +98,20 @@ namespace DataInfrastructure.Model
     public class ApiEmployee
     {
         public int id { get; set; }
-
         public string fullName { get; set; }
-
-        public System.DateTime initiationDate { get; set; } 
-
+        public System.DateTime initiationDate { get; set; }
         public int fk_hiredfor { get; set; }
-
         public string email { get; set; }
-
         public string cellphone { get; set; }
-
         public System.DateTime startDate { get; set; }
         public string service_equipmentneeded { get; set; }
         public string aditional_service { get; set; }
-        public int fk_companylist { get; set; }
+        public Nullable<int> fk_companylist { get; set; }
         public string another_company { get; set; }
         public string aditional_info { get; set; }
-        public int building_access { get; set; }
         public string another_building { get; set; }
         public string restricted_access { get; set; }
-
         public string hiringManagerEmail { get; set; }
+        public Nullable<int> fk_buildingaccess { get; set; }
     }
 }
